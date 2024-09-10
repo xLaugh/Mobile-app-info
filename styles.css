@@ -1,0 +1,184 @@
+@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+
+* {
+    font-family: "YouTube Sans";
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blanc: #ffffff;
+    --violet: #8865ff;
+    --orange: #ffc000;
+    --orange-jaune: #f7c52f;
+    --background: #e0e0dd;
+    --actu-violet: #956fff;
+    --blanc2: #ccc;
+}
+
+body {
+    background-color: var(--blanc);
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--violet);
+    font-size: 35px;
+}
+
+img {
+    height: 40px;
+}
+
+.profil {
+    padding-right: 25px;
+}
+
+
+.question {
+    padding-left: 25px;
+}
+
+/* Boutton Filtres */
+
+.filtres {
+    margin-top: 10px;
+    background-color: var(--orange);
+    color: var(--blanc);
+    padding: 8px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filtres:hover {
+    color: var(--blanc);
+    background-color: var(--orange);
+}
+
+.filtres img {
+    width: 15px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+    transform: rotate(90deg);
+}
+
+.filtres img:last-child {
+    transform: rotate(-90deg);
+}
+
+/* Boutton Tri */
+
+.tri {
+    margin-top: 20px;
+    background-color: var(--background);
+    color: var(--violet);
+    padding: 4px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    background-color: var(--blanc);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex-direction: row;
+}
+
+.option {
+    display: block;
+    padding: 10px;
+    border: none;
+    background-color: var(--blanc);
+    cursor: pointer;
+}
+
+.option.selected {
+    background-color: var(--blanc2);
+}
+
+
+/* Actualités */
+
+.actu {
+    background-color: var(--violet);
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 26px;
+    width: 300px;
+    position: relative;
+    cursor: pointer;
+}
+  
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+  
+.date {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+  
+.description {
+    font-family: "Calibri";
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+  
+.sous-actu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    background-color: var(--actu-violet);
+}
+  
+.tags {
+    font-family: "Calibri";
+    margin: 0;
+    font-size: 15px;
+    color: var(--blanc);
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.fleche {
+    padding-top: 10px;
+    height: 40px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }    
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Application Mobile</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="parametres/settings.html"><img src="img/profil.png" class="profil"></a>
+        <h1> Actualités </h1>
+        <a href="aide/aide.html"><img src="img/question.png" class="question"></a>
+    </div>
+    <div class="bottom-header">
+    <img src="img/book.png">
+    <button class="filtres" id="filtreBtn">
+        <img src="img/main.png" alt="Main gauche">
+        Filtres
+        <img src="img/main.png" alt="Main droite">
+      </button>
+      
+      <button class="tri" id="triButton">Tri</button>
+      <div class="options" id="optionsContainer">
+          <button class="option" data-option="option1">Vues &#x2193;</button>
+          <button class="option" data-option="option2">Vues &#x2191;</button>
+          <button class="option" data-option="option3">Publiée &#x2193</button>
+          <button class="option" data-option="option4">Publiée &#x2191</button>
+          <button class="option" data-option="option5">J'aimes &#x2193</button>
+          <button class="option" data-option="option6">J'aimes &#x2191</button>
+      </div>
+
+      <div class="actu">
+        <h2>Titre</h2>
+        <p class="date">DATE</p>
+        <p class="description">Description</p>
+        <div class="sous-actu">
+            <p class="tags">TAG | TAG | TAG | TAG | TAG</p>
+        </div>
+    </div>
+    
+    <div class="actu">
+        <h2>Titre</h2>
+        <p class="date">DATE</p>
+        <p class="description">Description</p>
+        <div class="sous-actu">
+            <p class="tags">TAG</p>
+        </div>
+    </div>
+    
+    <div class="actu">
+        <h2>Titre</h2>
+        <p class="date">DATE</p>
+        <p class="description">Description</p>
+        <div class="sous-actu">
+            <p class="tags">TAG</p>
+        </div>
+    </div>
+
+      <img src="img/arrow.png" class="fleche">
+</div>
+    
+</body>
+</html>
